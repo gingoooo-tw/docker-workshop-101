@@ -122,13 +122,9 @@ docker exec -it /bin/bash
 
 ---
 
-## Level 3
+## Level 3：怎麼更聰明的打包
 
-### 第三層：去保護鏡照的方式打包
-
-### DOCKERFILE 完整寫
-
-# Dockerfile 範例
+### Dockerfile 範例
 ```
 FROM python:3.9
 
