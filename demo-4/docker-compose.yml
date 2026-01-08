@@ -1,5 +1,11 @@
-version: '3'
+version: "3.9"
 
 services:
-  hello-world:
-    image: hello-world
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask-echo-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
