@@ -58,11 +58,9 @@ docker run --name my-container <image>
 # --restart: 容器的重啟策略（如 no、on-failure、always、unless-stopped）
 docker run --restart always <image>
 
-# Port mapping
-docker run -p 8080:80 <image>
 ```
 
-<img src="./image/docker_port_mapping_0.png" width="400">
+<!-- <img src="./image/docker_port_mapping_0.png" width="400"> -->
 
 ### 查看與管理
 
@@ -96,8 +94,6 @@ docker system prune           # 清理未使用的資源(務必謹慎使用)
 ```
 
 ### 實作題：
-
-1. 練習打包 `/demo-2/` 內的程式碼
 
 ---
 
@@ -136,7 +132,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-# CMD:  當 DOCKER 容器起來之後要執行的命令, 和 RUN 差異是 RUN 是在創建當下執行
 CMD ["python", "app.py"]
 ```
 
@@ -163,10 +158,4 @@ CMD ["python", "app.py"]
 
 ### 實作題：
 
-1. 練習透過 docker compose 啟用 `/demo-4/`
-
 ---
-
-## 參考資料
-- Docker 10分鐘速速入門: http://youtube.com/watch?v=mPquwpxwVAU
-- https://www.runoob.com/docker/docker-run-command.html
